@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+:root {
+    --bule: #2980b9;
+}
+
+* {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.2s cubic-bezier(0.37, 1.14, 0.26, 1.24);
+}
+
+*::selection {
+    background: #ff3300;
+    color: #fff;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+header .header-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .header-1 .logo {
+    font-size: 2rem;
+    color: #666;
+}
+
+header .header-1 .logo i {
+    color: var(--bule);
+}
+
+header .header-1 .form-container form {
+    display: flex;
+}
+
+header .header-1 .form-container form #search {
+    height: 4rem;
+    width: 50rem;
+    outline: none;
+    border: 0.2rem solid rgb(133, 129, 129);
+    font-size: 1.5rem;
+    padding: 0 1rem;
+}
+
+header .header-1 .form-container label {
+    height: 4rem;
+    width: 5rem;
+    text-align: center;
+    line-height: 4rem;
+    font-size: 2rem;
+    cursor: pointer;
+    background: var(--bule);
+    color: #fff;
+}
+
+header .header-1 .form-container label #search:focus {
+    border-color: var(--bule);
+}
+
+header .header-1 .form-container label:hover {
+    color: yellow;
+}

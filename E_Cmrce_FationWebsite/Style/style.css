@@ -402,6 +402,281 @@ header .header-2.header-active {
     margin-left: 2rem;
 }
 
+.gallery {
+    min-height: 100vh;
+}
+
+.gallery .controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
+    padding: 1.5rem 0;
+    list-style: none;
+}
+
+.gallery .controls .btn {
+    margin: 2rem;
+    line-height: 4rem;
+    text-align: center;
+    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+.gallery .controls .btn.button-active {
+    background: #333;
+}
+
+.gallery .image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery .image-container .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.3);
+    flex: 1 1 30rem;
+}
+
+.gallery .image-container .box .image {
+    height: 12rem;
+    width: 20rem;
+    text-align: center;
+    padding: 1rem;
+    background: #f0f0f0;
+}
+
+.gallery .image-container .box .image img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery .image-container .box:hover .image {
+    background: #ccc;
+}
+
+.gallery .image-container .box .info {
+    width: 100%;
+}
+
+.gallery .image-container .box .info h3 {
+    font-size: 2rem;
+    color: var(--blue);
+    padding: 1rem;
+}
+
+.gallery .image-container .box .info .subinfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+}
+
+.gallery .image-container .box .info .subinfo .price {
+    color: #ff3300;
+    font-size: 2rem;
+}
+
+.gallery .image-container .box .info .subinfo .price .stars i {
+    color: yellow;
+    font-size: 1.5rem;
+}
+
+.deal {
+    min-height: 100vh;
+}
+
+.deal .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.deal .box-container .box {
+    flex: 1 1 40rem;
+    height: 25rem;
+    margin: 2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+.deal .box-container .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.deal .box-container .box .content {
+    position: absolute;
+    top: 55%;
+    left: 3rem;
+    transform: translateY(-50%);
+}
+
+.deal .box-container .box .content h3 {
+    font-size: 3.5rem;
+    color: #fff;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+.deal .box-container .box .content p {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.deal .box-container .box .content .btn {
+    margin: 1.4rem 0;
+}
+
+.deal .icons-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+.deal .icons-container .icons {
+    flex: 1 1 25rem;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    border: 0.3rem solid var(--blue);
+}
+
+.deal .icons-container .icons i {
+    color: var(--blue);
+    font-size: 4rem;
+    padding: 1rem 0;
+}
+
+.deal .icons-container .icons h3 {
+    color: #333;
+    font-size: 2rem;
+}
+
+.deal .icons-container .icons p {
+    color: #666;
+    font-size: 1.3rem;
+    padding: 1rem 0;
+}
+
+.newsletter {
+    background: linear-gradient(var(--blue), var(--blue)), url(../Images/deal1.jpg) no-repeat;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.newsletter h1 {
+    color: #fff;
+    font-size: 4rem;
+}
+
+.newsletter p {
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.newsletter form {
+    height: 5.5rem;
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5rem;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.newsletter form input[type="email"] {
+    height: 100%;
+    width: 80%;
+    padding: 0 1rem;
+    outline: none;
+    background: none;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.newsletter form input[type="submit"] {
+    border-radius: 5rem;
+}
+
+.footer .box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer .box-container .box {
+    flex: 1 1 25rem;
+    margin: 2rem;
+}
+
+.footer .box-container .box .logo {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.footer .box-container .box i {
+    color: var(--blue);
+}
+
+.footer .box-container .box p {
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    color: #666;
+}
+
+.footer .box-container .box h3 {
+    font-size: 2.5rem;
+    color: var(--blue);
+}
+
+.footer .box-container .box:nth-child(2) {
+    text-align: center;
+}
+
+.footer .box-container .box:nth-child(2) a {
+    display: block;
+    font-size: 2rem;
+    padding: 0.4rem 0;
+    color: #666;
+}
+
+.footer .box-container .box:nth-child(2) a:hover {
+    text-decoration: underline;
+}
+
+.footer .credit {
+    text-align: center;
+    width: 85%;
+    margin: 0 auto;
+    padding: 1.4rem 0;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.3);
+    color: #666;
+    font-size: 2rem;
+}
+
+.footer .credit span {
+    color: var(--blue);
+}
+
 
 /* media queries */
 
